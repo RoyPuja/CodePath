@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ToDoApp</string>
+    <string name="edit_page">Edit Item</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tvAddVal">Add a new item</string>
+    <string name="edit_page_tv">Edit Item Below</string>
+    <string name="edit_page_btnSave">Save</string>
+</resources>
