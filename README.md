@@ -12,4 +12,7 @@ Android app to create a list of tasks with the following use cases.
 8)Custom Adapter has been used and Dialog Fragment has been used to display the date dialog box to select date.
 9)Different package has been used for database functionalities,data fetch functionalities, and other general functionalities.
 
+A demo of the created app is attched below :
+https://cloud.githubusercontent.com/assets/11285573/9602760/fc9e2a76-505f-11e5-8e15-13beb2fdaf88.gif
+
 
