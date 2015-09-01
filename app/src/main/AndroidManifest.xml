@@ -10,7 +10,7 @@
         android:logo="@drawable/blue_tick">
 
         <activity
-            android:name=".MainActivity"
+            android:name=".ActivityManager"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

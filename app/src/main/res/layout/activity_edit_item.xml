@@ -1,22 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:weightSum="1">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
     <TextView android:id="@+id/TVStatic"
         android:text="@string/edit_page_tv"
-        android:layout_width="147dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="0.06"
-        android:textSize="@dimen/activity_vertical_margin"
+        android:layout_marginTop="25dp"
         android:autoText="false"
         android:textStyle="bold" />
     <EditText android:id="@+id/TVEdit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:ems="8"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/TVStatic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prioritylabel"
+        android:layout_below="@+id/TVStatic"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:text="@string/priority"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/priorityGroup"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/prioritylabel">
+        <RadioButton android:id="@+id/radio_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/low"/>
+        <RadioButton android:id="@+id/radio_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+        <RadioButton android:id="@+id/radio_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high" />
+    </RadioGroup>
+    <!--Date -->
+    <TextView
+        android:id="@+id/time_and_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/priorityGroup"
+        android:textStyle="bold"
+        android:text="@string/datelabel"
+         />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priorityGroup"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/time_and_date"
+        android:text="@string/datedisplay"
+         />
+    <Button
+        android:id="@+id/date_picker_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_date_string"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/time_and_date"
+        android:layout_alignParentStart="true" />
+
+
+
+
     <Button android:id="@+id/btnSave"
         android:text="@string/edit_page_btnSave"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date_picker_button"
+android:layout_marginTop="12dp"
+         />
 
-</LinearLayout>
+</RelativeLayout>
